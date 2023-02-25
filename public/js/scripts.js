@@ -600,4 +600,82 @@
 		});
 	}
 
+	/*-------------------------------------------------------------------------------
+	  Toggle Dark and Light Mode
+	-------------------------------------------------------------------------------*/
+
+	
+
+	var themeMode = localStorage.getItem('themeMode');
+	if(themeMode === 'enabled'){
+		$('#check').prop('checked', true);
+		lightModeFunction();
+	}
+	if(themeMode === 'disabled'){
+		$('#check').prop('checked', false);
+    	darkModeFunction();
+	}
+
+	$('#check').on('change',function(e){
+		e.preventDefault();
+		//   conditions to apply when light mode
+			if(this.checked == true){
+				lightModeFunction();
+				localStorage.setItem('themeMode', 'enabled');
+	
+			}else{
+				darkModeFunction();
+				localStorage.setItem('themeMode', "disabled");
+			}
+		});
+
+	function lightModeFunction(){
+		const brand_imgs = $('a.brand img');
+		const partners_logo = $('.partner-carousel-item img');
+
+		document.body.style.setProperty('--bg-color', '#fff')
+		document.body.style.setProperty('--bg-color-invers', '#000')
+		document.body.style.setProperty('--text-color', '#000')
+		document.body.style.setProperty('--text-color-invers', '#fff')
+		document.body.style.setProperty('--dots-bg', 'url(../images/bg/dots-bg-light.png) 0 0 repeat');
+		document.body.style.setProperty('--secondary-text-color', '#666')
+		document.body.style.setProperty('--light-mode-toggler-translate', 'translatex(0%)')
+		
+
+		for(let i=0; i<brand_imgs.length ; i++){
+			brand_imgs[i].setAttribute('src', 'images/brand-dark.png')
+		}
+
+		for(let i=0; i<partners_logo.length ; i++){
+			let str = partners_logo[i].getAttribute('src');
+			str = str.replace('/partners-logo-light', '/partners-logo-dark');
+			partners_logo[i].setAttribute('src', str);
+		}
+	}
+
+	function darkModeFunction(){
+		const brand_imgs = $('a.brand img');
+		const partners_logo = $('.partner-carousel-item img');
+
+		document.body.style.setProperty('--bg-color', '#272727')
+		document.body.style.setProperty('--bg-color-invers', '#fff')
+		document.body.style.setProperty('--text-color', '#fff')
+		document.body.style.setProperty('--text-color-invers', '#000')
+		document.body.style.setProperty('--dots-bg', 'url(../images/bg/dots2.png) 0 0 repeat');
+		document.body.style.setProperty('--secondary-text-color', '#7e7e7e')
+		document.body.style.setProperty('--light-mode-toggler-translate', 'translatex(100%)')
+
+
+		for(var i=0; i<brand_imgs.length ; i++){
+			brand_imgs[i].setAttribute('src', 'images/brand-white.png')
+		}
+
+		for(let i=0; i<partners_logo.length ; i++){
+			let str= partners_logo[i].getAttribute('src');
+			str = str.replace('/partners-logo-dark', '/partners-logo-light');
+			partners_logo[i].setAttribute('src', str);
+		}
+	}
+
+
 })(jQuery);
