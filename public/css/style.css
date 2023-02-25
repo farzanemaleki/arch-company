@@ -3545,7 +3545,7 @@ a.brand:focus {
     }
 }
 
-@media(min-height:600px) {
+@media(min-height:800px) {
     .menu .menu-lang {
         top: 7rem
     }
