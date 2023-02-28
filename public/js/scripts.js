@@ -640,10 +640,11 @@
 		document.body.style.setProperty('--dots-bg', 'url(../images/bg/dots-bg-light.png) 0 0 repeat');
 		document.body.style.setProperty('--secondary-text-color', '#666')
 		document.body.style.setProperty('--light-mode-toggler-translate', 'translatex(0%)')
+
 		
 
 		for(let i=0; i<brand_imgs.length ; i++){
-			brand_imgs[i].setAttribute('src', 'images/brand-dark.png')
+			brand_imgs[i].setAttribute('src', '/images/brand-dark.png')
 		}
 
 		for(let i=0; i<partners_logo.length ; i++){
@@ -666,8 +667,9 @@
 		document.body.style.setProperty('--light-mode-toggler-translate', 'translatex(100%)')
 
 
+
 		for(var i=0; i<brand_imgs.length ; i++){
-			brand_imgs[i].setAttribute('src', 'images/brand-white.png')
+			brand_imgs[i].setAttribute('src', '/images/brand-white.png')
 		}
 
 		for(let i=0; i<partners_logo.length ; i++){

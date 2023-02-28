@@ -2,8 +2,9 @@
 <div class="menu"> 
     <span class="close-menu icon-cross2 right-boxed"></span>
     <div class="menu-lang right-boxed">
-      <a href="index.html" class="active">FA</a>
-      <a href="index.html">En</a>
+      @foreach (config('app.availableLocales') as $name => $locale)
+          <a href="{{ route(Route::currentRouteName(), $locale) }}" class="{{app()->getLocale() === $locale}} ? 'active' : ''">{{$name}}</a>
+      @endforeach
     </div>
     <ul class="menu-list right-boxed">
       <li class="active">

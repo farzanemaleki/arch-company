@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="fa">
+<html lang="{{app()->getLocale() === 'fa' ? 'fa' : 'en'}}" dir="{{app()->getLocale() === 'fa' ? 'rtl' : 'ltr'}}">
   <head>
     @include("site.includes.headerLinks")
     @yield("links")

@@ -7,7 +7,7 @@
     </button>
 
     <a class="brand" href="index.html#">
-      <img alt="" src="images/brand.png">
+      <img alt="" src="{{asset('images/brand.png')}}">
       <div class="brand-info">
         <div class="brand-name">bauhaus</div>
         <div class="brand-text">architecture</div>
@@ -26,7 +26,7 @@
                       <div class="sun">
                           <?xml version="1.0" encoding="iso-8859-1"?>
                           <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                          <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                          <svg  version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                               viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
                               xml:space="preserve">
@@ -111,5 +111,5 @@
 
     <div class="navbar-spacer hidden-sm hidden-xs"></div>
 
-    <address class="navbar-address hidden-sm hidden-xs">call us: <span class="text-dark">(+080) 9684 32 45 789</span></address>
+    <address class="navbar-address hidden-sm hidden-xs">{{__('call us')}}: <span class="text-dark">(+080) 9684 32 45 789</span></address>
   </header>

@@ -2,7 +2,7 @@
     <div class="footer-flex">
       <div class="flex-item">
         <a class="brand pull-left" href="index.html#">
-          <img alt="" src="images/brand.png">
+          <img alt="" src="{{asset('images/brand.png')}}">
           <div class="brand-info">
             <div class="brand-name">bauhaus</div>
             <div class="brand-text">architecture</div>
@@ -31,8 +31,11 @@
       </div>
       <div class="flex-item">
         <ul>
-          <li class="active"><a href="index.html">FA</a></li>
-          <li><a href="index.html">ENG</a></li>
+          @foreach (config('app.availableLocales') as $name => $locale)
+          <li>
+            <a href="{{ route(Route::currentRouteName(), $locale) }}" class="{{app()->getLocale() === $locale}} ? 'active' : ''">{{$name}}</a>
+          </li>
+          @endforeach
         </ul> 
       </div>
       <div class="flex-item">

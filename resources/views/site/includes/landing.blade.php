@@ -8,11 +8,11 @@
 
           <!-- Slide 1 -->
 
-          <li  data-transition='slideleft' data-slotamount='default'  data-masterspeed="1000" data-fsmasterspeed="1000">
+          <li dir="ltr"  data-transition='slideleft' data-slotamount='default'  data-masterspeed="1000" data-fsmasterspeed="1000">
 
             <!-- Main image-->
-
-            <img src="images/slider/slide1.jpg" data-bgparallax="5"  alt="" data-bgposition="center 0" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
+            
+            <img src="{{asset('images/slider/slide1.jpg')}}" data-bgparallax="5"  alt="" data-bgposition="center 0" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
 
             <!-- Layer 1 -->
 
@@ -91,11 +91,11 @@
               style="background-color:#cee002;"> </div>
 
             <!-- Layer 5 -->
-
+            
             <div class="slider-title tp-caption tp-resizeme" 
-              data-x="['left']" data-hoffset="['156']"  
+              data-x="['{{app()->getLocale() === 'fa' ? 'right' : 'left'}}']" data-hoffset="['{{app()->getLocale() === 'fa' ? '560' : '156'}}']"  
               data-y="['middle','middle','middle','middle']" data-voffset="['-30']"
-              data-textAlign="['left']"
+              data-textAlign="['{{app()->getLocale() === 'fa' ? 'right' : 'left'}}']"
               data-fontsize="['72', '63','57','50']"
               data-lineheight="['72','68', '62','54']"
               data-height="none"
@@ -116,7 +116,7 @@
             <!-- Layer 6 -->
 
             <div class="slider-title tp-caption" 
-              data-x="['left']" data-hoffset="['156']"  
+              data-x="['{{app()->getLocale() === 'fa' ? 'right' : 'left'}}']" data-hoffset="['{{app()->getLocale() === 'fa' ? '800' : '156'}}']"  
               data-y="['middle','middle','middle','middle']" data-voffset="['-170']"
               data-textAlign="['left']"
               data-fontsize="['18']"
@@ -138,7 +138,7 @@
             <!-- Layer 7 -->
 
             <div class="slider-title tp-caption" 
-              data-x="['left']" data-hoffset="['156']"  
+              data-x="['{{app()->getLocale() === 'fa' ? 'right' : 'left'}}']" data-hoffset="['{{app()->getLocale() === 'fa' ? '800' : '156'}}']"  
               data-y="['middle','middle','middle','middle']" data-voffset="['230']"
               data-textAlign="['left']"
               data-fontsize="['18']"
@@ -155,18 +155,18 @@
               data-splitout="none" 
               data-responsive_offset="on" 
               data-elementdelay="0.05" style="font-weight:600;">
-                <a href="index.html" class="link-arrow">See project <i class="icon ion-ios-arrow-thin-right"></i>
+                <a href="index.html" class="link-arrow" dir="{{app()->getLocale() === 'fa' ? 'rtl' : 'ltr'}}">See project <i class="icon ion-ios-arrow-thin-{{app()->getLocale() === 'fa' ? 'left' : 'right'}}"></i>
               </a>
             </div>
           </li>
 
           <!-- Slide 2 -->
 
-          <li  data-transition='slideleft' data-slotamount='default' data-masterspeed="1000" data-fsmasterspeed="1000">
+          <li dir="ltr"  data-transition='slideleft' data-slotamount='default' data-masterspeed="1000" data-fsmasterspeed="1000">
 
             <!-- Main image-->
-
-            <img src="images/slider/slide2.jpg"  data-bgparallax="5" alt="" data-bgposition="center 0" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
+            
+            <img src="{{asset('images/slider/slide2.jpg')}}"  data-bgparallax="5" alt="" data-bgposition="center 0" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
 
             <!-- Layer 1 -->
             <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" 
@@ -246,9 +246,9 @@
             <!-- Layer 5 -->
 
             <div class="slider-title tp-caption tp-resizeme" 
-              data-x="['left']" data-hoffset="['156']"  
+              data-x="['{{app()->getLocale() === 'fa' ? 'right' : 'left'}}']" data-hoffset="['{{app()->getLocale() === 'fa' ? '560' : '156'}}']"  
               data-y="['middle','middle','middle','middle']" data-voffset="['-30']"
-              data-textAlign="['left']"
+              data-textAlign="['{{app()->getLocale() === 'fa' ? 'right' : 'left'}}']"
               data-fontsize="['72', '63','57','50']"
               data-lineheight="['72','68', '62','54']"
               data-height="none"
@@ -269,7 +269,7 @@
             <!-- Layer 6 -->
 
             <div class="slider-title tp-caption" 
-              data-x="['left']" data-hoffset="['156']"  
+              data-x="['{{app()->getLocale() === 'fa' ? 'right' : 'left'}}']" data-hoffset="['{{app()->getLocale() === 'fa' ? '800' : '156'}}']"  
               data-y="['middle','middle','middle','middle']" data-voffset="['-170']"
               data-textAlign="['left']"
               data-fontsize="['18']"
@@ -291,7 +291,7 @@
             <!-- Layer 7 -->
 
             <div class="slider-title tp-caption" 
-              data-x="['left']" data-hoffset="['156']"  
+              data-x="['{{app()->getLocale() === 'fa' ? 'right' : 'left'}}']" data-hoffset="['{{app()->getLocale() === 'fa' ? '800' : '156'}}']"  
               data-y="['middle','middle','middle','middle']" data-voffset="['230']"
               data-textAlign="['left']"
               data-fontsize="['18']"
@@ -308,18 +308,18 @@
               data-splitout="none" 
               data-responsive_offset="on" 
               data-elementdelay="0.05" style="font-weight:600; ">
-                <a href="index.html" class="link-arrow">See project <i class="icon ion-ios-arrow-thin-right"></i>
+              <a href="index.html" class="link-arrow" dir="{{app()->getLocale() === 'fa' ? 'rtl' : 'ltr'}}">See project <i class="icon ion-ios-arrow-thin-{{app()->getLocale() === 'fa' ? 'left' : 'right'}}"></i>
               </a>
             </div>
           </li>
 
           <!-- Slide 3 -->
 
-          <li data-transition='slideleft' data-slotamount='default' data-masterspeed="1000" data-fsmasterspeed="1000">
+          <li dir="ltr" data-transition='slideleft' data-slotamount='default' data-masterspeed="1000" data-fsmasterspeed="1000">
 
             <!-- Main image-->
-
-            <img src="images/slider/slide3.jpg"  data-bgparallax="5" alt="" data-bgposition="center 0" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
+            
+            <img src="{{asset('images/slider/slide3.jpg')}}"  data-bgparallax="5" alt="" data-bgposition="center 0" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
 
             <!-- Layer 1 -->
             <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" 
@@ -398,9 +398,9 @@
             <!-- Layer 5 -->
 
             <div class="slider-title tp-caption tp-resizeme" 
-              data-x="['left']" data-hoffset="['156']"  
+              data-x="['{{app()->getLocale() === 'fa' ? 'right' : 'left'}}']" data-hoffset="['{{app()->getLocale() === 'fa' ? '560' : '156'}}']"  
               data-y="['middle','middle','middle','middle']" data-voffset="['-30']"
-              data-textAlign="['left']"
+              data-textAlign="['{{app()->getLocale() === 'fa' ? 'right' : 'left'}}']"
               data-fontsize="['72', '63','57','50']"
               data-lineheight="['72','68', '62','54']"
               data-height="none"
@@ -421,7 +421,7 @@
             <!-- Layer 6 -->
 
             <div class="slider-title tp-caption" 
-              data-x="['left']" data-hoffset="['156']"  
+              data-x="['{{app()->getLocale() === 'fa' ? 'right' : 'left'}}']" data-hoffset="['{{app()->getLocale() === 'fa' ? '800' : '156'}}']"  
               data-y="['middle','middle','middle','middle']" data-voffset="['-170']"
               data-textAlign="['left']"
               data-fontsize="['18']"
@@ -443,7 +443,7 @@
             <!-- Layer 7 -->
 
             <div class="slider-title tp-caption" 
-              data-x="['left']" data-hoffset="['156']"  
+              data-x="['{{app()->getLocale() === 'fa' ? 'right' : 'left'}}']" data-hoffset="['{{app()->getLocale() === 'fa' ? '800' : '156'}}']"  
               data-y="['middle','middle','middle','middle']" data-voffset="['230']"
               data-textAlign="['left']"
               data-fontsize="['18']"
@@ -460,7 +460,7 @@
               data-splitout="none" 
               data-responsive_offset="on" 
               data-elementdelay="0.05" style="font-weight:600; ">
-                <a href="index.html" class="link-arrow">See project <i class="icon ion-ios-arrow-thin-right"></i>
+              <a href="index.html" class="link-arrow" dir="{{app()->getLocale() === 'fa' ? 'rtl' : 'ltr'}}">See project <i class="icon ion-ios-arrow-thin-{{app()->getLocale() === 'fa' ? 'left' : 'right'}}"></i>
               </a>
             </div>
           </li>

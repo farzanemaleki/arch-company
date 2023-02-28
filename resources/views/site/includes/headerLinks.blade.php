@@ -13,4 +13,5 @@
 
 <!-- Styles -->
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i|Poppins:300,400,500,600,700" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet" media="screen">
+<link href="{{ app()->getlocale() === 'fa' ? asset('/css/styleRTL.css') : asset('/css/style.css') }}" rel="stylesheet" media="screen">
+

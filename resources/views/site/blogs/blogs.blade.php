@@ -15,7 +15,7 @@
         <div class="grid-items js-isotope js-grid-items">
           <div class="grid-item inspiration js-isotope-item js-grid-item">
             <div class="news-item">
-              <img alt="" src="images/news/1-370x370.jpg">
+              <img alt="" src="{{asset('images/news/1-370x370.jpg')}}">
               <div class="news-hover">
                 <div class="hover-border"><div></div></div>
                 <div class="content">
@@ -29,7 +29,7 @@
           </div>
           <div class="grid-item inspiration js-isotope-item js-grid-item">
             <div class="news-item">
-              <img alt="" src="images/news/2-370x370.jpg">
+              <img alt="" src="{{asset('images/news/2-370x370.jpg')}}">
               <div class="news-hover">
                 <div class="hover-border"><div></div></div>
                 <div class="content">
@@ -43,7 +43,7 @@
           </div>
           <div class="grid-item architecture-inteior js-isotope-item js-grid-item">
             <div class="news-item">
-              <img alt="" src="images/news/3-370x370.jpg">
+              <img alt="" src="{{asset('images/news/3-370x370.jpg')}}">
               <div class="news-hover">
                 <div class="hover-border"><div></div></div>
                 <div class="content">
@@ -57,7 +57,7 @@
           </div>
           <div class="grid-item architecture-inteior js-isotope-item js-grid-item">
             <div class="news-item">
-              <img alt="" src="images/news/4-370x370.jpg">
+              <img alt="" src="{{asset('images/news/4-370x370.jpg')}}">
               <div class="news-hover">
                 <div class="hover-border"><div></div></div>
                 <div class="content">
@@ -71,7 +71,7 @@
           </div>
           <div class="grid-item decoration js-isotope-item js-grid-item">
             <div class="news-item">
-              <img alt="" src="images/news/5-370x370.jpg">
+              <img alt="" src="{{asset('images/news/5-370x370.jpg')}}">
               <div class="news-hover">
                 <div class="hover-border"><div></div></div>
                 <div class="content">
@@ -85,7 +85,7 @@
           </div>
           <div class="grid-item decoration js-isotope-item js-grid-item">
             <div class="news-item">
-              <img alt="" src="images/news/6-370x370.jpg">
+              <img alt="" src="{{asset('images/news/6-370x370.jpg')}}">
               <div class="news-hover">
                 <div class="hover-border"><div></div></div>
                 <div class="content">
@@ -99,7 +99,7 @@
           </div>
           <div class="grid-item plants js-isotope-item js-grid-item">
             <div class="news-item">
-              <img alt="" src="images/news/7-370x370.jpg">
+              <img alt="" src="{{asset('images/news/7-370x370.jpg')}}">
               <div class="news-hover">
                 <div class="hover-border"><div></div></div>
                 <div class="content">
@@ -113,7 +113,7 @@
           </div>
           <div class="grid-item plants js-isotope-item js-grid-item">
             <div class="news-item">
-              <img alt="" src="images/news/8-370x370.jpg">
+              <img alt="" src="{{asset('images/news/8-370x370.jpg')}}">
               <div class="news-hover">
                 <div class="hover-border"><div></div></div>
                 <div class="content">
@@ -127,7 +127,7 @@
           </div>
           <div class="grid-item plants js-isotope-item js-grid-item">
             <div class="news-item">
-              <img alt="" src="images/news/9-370x370.jpg">
+              <img alt="" src="{{asset('images/news/9-370x370.jpg')}}">
               <div class="news-hover">
                 <div class="hover-border"><div></div></div>
                 <div class="content">

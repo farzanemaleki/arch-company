@@ -64,3 +64,22 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+## Facilities
+This project is aimed at providing localization support for two languages, along with two styles for RTL (right-to-left) and LTR (left-to-right) languages.
+
+## Localization Details
+Run the command 'php artisan make:middleware' SetLocale to create a middleware class named 'SetLocale'.
+protected $middleware = [
+    // Other middleware classes...
+    \App\Http\Middleware\SetLocale::class,
+];
+also Implement the handle method 
+and in web.php add the following route group to set the prefix for the locale
+Route::group(['prefix' => '{local}'], function () {...}
+
+now you can use "app()->getLocale()" to conditionally load different content, such as language-specific strings, based on the user's locale.
+    {{ app()->getLocale() == 'en' ? 'Hello, world!' : 'سلام دنیا!' }}
+
+
